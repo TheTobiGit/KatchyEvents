@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  overflow: hidden;
+}
+
+/* Color Palette*/
+:root {
+  --brand-color: #22C55E;
+  --dark-color: #073418;
+  --mid-color: #A2DBB7;
+  --light-color: #F8FEFA;
+}
+
+/* hero section */
+.hero {
+  min-height: 70vh;
+  background-color: var(--brand-color);
+}
+
+/* header */
+header {
+  display: flex;
+  color: var(--light-color);
+  padding: 20px;
+}
