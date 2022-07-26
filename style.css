@@ -1,12 +1,35 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Color Palette*/
+  /* --brand-color: #60A5FA;
+  --dark-color: #152D73;
+  --mid-color: #D4D4D8;
+  --light-color: #F8FAFC; */
+
+  --brand-color: #22C55E;
+  --dark-color: #073418;
+  --mid-color: #A2DBB7;
+  --light-color: #F8FEFA;
+
+  /* Fonts */
+  --regualar-font: 'Raleway', sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
+  font-family: var(--regualar-font);
 }
 
+/* Removing decoration from all links */
 a {
   text-decoration: none;
 }
+
 
 ul,
 ol {
@@ -14,23 +37,82 @@ ol {
   overflow: hidden;
 }
 
-/* Color Palette*/
-:root {
-  --brand-color: #22C55E;
-  --dark-color: #073418;
-  --mid-color: #A2DBB7;
-  --light-color: #F8FEFA;
-}
 
 /* hero section */
 .hero {
-  min-height: 70vh;
-  background-color: var(--brand-color);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* The hero image */
+.hero-image {
+  /* background-image: url("Shiny\ Overlay.svg"); */
+  background-image: url("Colored\ Patterns.svg");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* header */
 header {
+  height: 10vh;
   display: flex;
-  color: var(--light-color);
-  padding: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--dark-color);
+  padding: 8vh 13vw;
 }
+
+nav {
+  display: flex;
+}
+
+.logo {
+  margin-right: auto;
+  cursor: default;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+.nav-tabs li {
+  cursor: pointer;
+}
+
+.left-col h1:first-of-type {
+  border: 1px solid red;
+}
+
+.nav-tabs .tel {
+  cursor: default;
+  display: flex;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vh 13vw;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 28vw;
+  height: 69vh;
+}
+
