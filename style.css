@@ -43,8 +43,8 @@ ol {
 
 /* The hero image */
 .hero-image {
-  /* background-image: url("Colored\ Patterns\ \(1\).svg"); */
-  background-image: url("Colored\ Patterns.svg");
+  background-image: url("Colored\ Patterns\ \(1\).svg");
+  /* background-image: url("Colored\ Patterns.svg"); */
 
   /* Set a specific height */
   height: 100vh;
@@ -86,10 +86,6 @@ nav {
 .nav-tabs li {
   cursor: pointer;
   font-size: 1.3em;
-}
-
-.left-col h1:first-of-type {
-  border: 1px solid red;
 }
 
 .nav-tabs .tel {
