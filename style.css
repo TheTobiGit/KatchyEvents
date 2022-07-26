@@ -3,11 +3,6 @@
 
 :root {
   /* Color Palette*/
-  /* --brand-color: #60A5FA;
-  --dark-color: #152D73;
-  --mid-color: #D4D4D8;
-  --light-color: #F8FAFC; */
-
   --brand-color: #22C55E;
   --dark-color: #073418;
   --mid-color: #A2DBB7;
@@ -28,9 +23,10 @@
 /* Removing decoration from all links */
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-
+/* Removing Styling From Links */
 ul,
 ol {
   list-style: none;
@@ -47,7 +43,7 @@ ol {
 
 /* The hero image */
 .hero-image {
-  /* background-image: url("Shiny\ Overlay.svg"); */
+  /* background-image: url("Colored\ Patterns\ \(1\).svg"); */
   background-image: url("Colored\ Patterns.svg");
 
   /* Set a specific height */
@@ -77,6 +73,8 @@ nav {
 .logo {
   margin-right: auto;
   cursor: default;
+  outline: 2px double var(--dark-color);
+  padding: 5px;
 }
 
 .nav-tabs {
@@ -87,6 +85,7 @@ nav {
 
 .nav-tabs li {
   cursor: pointer;
+  font-size: 1.3em;
 }
 
 .left-col h1:first-of-type {
@@ -100,19 +99,108 @@ nav {
 
 .hero-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 5vh 13vw;
+  padding: 4vh 13vw;
 }
 
+/* From uiverse.io by @joe-watson-sbf */
 .card {
+  width: 90vw;
+  height: 69vh;
+  border-radius: 4px;
+  /* background: #212121; */
+  display: flex;
+  gap: 5px;
+  padding: .4em;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: 28vw;
-  height: 69vh;
 }
 
+.card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  /* background: #212121; */
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p:hover {
+  flex: 4;
+}
+
+.card p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  /* color: #ff568e; */
+  color: var(--dark-color);
+  letter-spacing: .1em;
+  background-color: var(--light-color);
+}
+
+.card p:hover span {
+  transform: rotate(0);
+}
+
+.card .weddings {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("card-images/wedding.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card .corporate {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("card-images/corporate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card .training {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("card-images/training.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card .catering {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("card-images/catering.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.socials div a {
+  display: flex;
+  align-items: center;
+}
+
+.socials i {
+  margin-right: 5px;
+  font-size: 1.8em;
+}
