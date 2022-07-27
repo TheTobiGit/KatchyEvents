@@ -11,3 +11,15 @@ document.onreadystatechange = function() {
                   "body").style.visibility = "visible";
             }
         };
+
+// $( ".chaotic-orbit" ).load( "test.html", function() { 
+//   $(".chaotic-orbit").fadeOut("slow"); 
+// });
+
+// if (document.readyState == 'complete') {
+//     $(".chaotic-orbit").fadeOut("slow");
+// } else {
+//     $(window).load(function () {
+//         $(".chaotic-orbit").fadeOut("slow");
+//     })
+// };
