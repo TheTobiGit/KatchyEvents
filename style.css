@@ -218,6 +218,10 @@ nav {
     height: 80vh;
   }
 
+  .card p:active {
+    flex: 4;
+  } 
+
   .card p span {
     transform: rotate(0);
 
@@ -239,4 +243,3 @@ nav {
     font-size: 16px;
     gap: 20px;
   }
-}
