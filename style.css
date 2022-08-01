@@ -215,6 +215,7 @@ nav {
 
   .card {
     flex-direction: column;
+    height: 80vh;
   }
 
   .card p span {
