@@ -66,6 +66,11 @@ nav {
   cursor: default;
   outline: 2px double var(--dark-color);
   padding: 5px;
+  font-size: 13px;
+}
+
+.navbar-nav {
+  margin-left: auto;
 }
 
 .nav-tabs {
