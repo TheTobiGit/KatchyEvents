@@ -206,6 +206,7 @@ nav {
   header {
     height: 2vh;
     font-size: 10px;
+    padding: 5vh 4vw;
   }
 
   nav {
@@ -218,5 +219,21 @@ nav {
 
   .card p span {
     transform: rotate(0);
+  }
+
+  .hero-content {
+    padding: 0 5vw;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .socials {
+    margin-top: 18px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 20px;
   }
 }
