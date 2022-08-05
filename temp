@@ -1,0 +1,14 @@
+<script>
+    var navEl = document.getElementById("nav-el");
+
+    function myFunction(x) {
+      x.classList.toggle("change");
+      navEl.style.display = "flex";
+    }
+</script>
+
+  <div class="hamburger" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+  </div>
