@@ -170,3 +170,20 @@ nav {
     padding: 5vh 5vw;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  nav {
+    margin-top: 20px;
+    display: flex;
+  }
+}
