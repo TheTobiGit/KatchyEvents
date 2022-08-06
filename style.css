@@ -100,7 +100,6 @@ nav {
   padding: 4vh 13vw;
 }
 
-
 .card {
   width: 90vw;
   height: 69vh;
@@ -247,10 +246,6 @@ nav {
     padding: 6vh 6vw;
   }
 
-  /* nav {
-    display: none;
-  } */
-
   .card {
     flex-direction: column;
     height: 80vh;
@@ -280,6 +275,10 @@ nav {
 @media only screen and (min-width: 910px) and (max-width: 1270px) {
   .header {
     padding: 0;
+  }
+
+  header {
+    font-size: 13px;
   }
 
   .hero-content {

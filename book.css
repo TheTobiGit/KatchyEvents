@@ -55,6 +55,7 @@ header {
   justify-content: flex-end;
   color: var(--dark-color);
   padding: 8vh 13vw 2vh 13vw;
+  margin-bottom: 3vh;
 }
 
 nav {
@@ -89,93 +90,6 @@ nav {
   display: flex;
 }
 
-.grid {
-  padding: 8vh 5vw;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 30%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-/* Responsive */
-@media only screen and (max-width: 768px) {
-  header {
-    height: 2vh;
-    font-size: 10px;
-    padding: 6vh 6vw;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .grid {
-    padding: 2vh 5vw;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 910px) {
-  header {
-    height: 2vh;
-    font-size: 10px;
-    padding: 6vh 6vw;
-  }
-
-  /* nav {
-    display: none;
-  } */
-
-  .grid {
-    padding: 2vh 5vw;
-  }
-}
-
-@media only screen and (min-width: 910px) and (max-width: 1270px) {
-  .header {
-    padding: 0;
-
-  }
-
-  header {
-    font-size: 13px;
-  }
-
-  .grid {
-    padding: 5vh 5vw;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -190,4 +104,34 @@ nav {
     margin-top: 20px;
     display: flex;
   }
+}
+
+.main {
+  /* border: 1px solid red; */
+  margin-top: 5vh;
+  /* padding: 20px; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .platform {
+  /* border: 1px solid brown; */
+  background-color: #fafbfd;
+  height: 80vh;
+  width: 80vw;
+  padding: 15px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  height: 60vh;
+  width: 78vw;
+  padding: 3px;
+}
+
+.main form {
+  background-color: #ffffff;
+  padding: 15px;
 }
