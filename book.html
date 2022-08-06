@@ -38,21 +38,41 @@
     </nav>
   </header>
 
-  <!-- <main class="main">
-    <div class="platform">
-      <div class="card">
-        <form action="">
-          <div class="slot">
-            <h3>Select a slot</h3>
-            <div class="date">
-              <label for="datepicker">Pick a Date</label>
-              <input type="date" id="datepicker" name="datepicker">
-            </div>
+  <main class="main">
+    <div class="form-container">
+      <form action="">
+        <label for="form-header" class="form-header">Book A Service</label>
+        <div class="name">
+          <div class="fname">
+            <!-- <label for="fname" id="fname">First Name *</label> -->
+            <input type="name" name="fname" id="fname" placeholder="First Name *" required>
           </div>
-          <div class="services"></div>
-          <div class="contact"></div>
-        </form>
-      </div>
+          <div class="lname">
+            <!-- <label for="lname" id="lname">Last Name *</label> -->
+            <input type="text" name="lname" id="lname" placeholder="Last Name *" required>
+          </div>
+        
+        
+        
+        </div>
+        <div class="contact">
+          <div class="email">
+            <input type="email" id="email" placeholder="Email *" required>
+          </div>
+          <div class="phone">
+            <input type="tel" id="phone" placeholder="Phone *">
+          </div>
+        </div>
+        <div class="date">
+          <div class="check-in">
+            <input type="date" id="date" placeholder="Check-in date">
+          </div>
+          <div class="check-out">
+            <!-- <input type="date" id="date" placeholder="Check-out date"> -->
+            <input type="text" placeholder="Date of birth" onfocus="(this.type='date')">
+          </div>
+        </div>
+      </form>
     </div>
   </main>
 
@@ -75,10 +95,8 @@
         (+233) 54 377 5667
       </a>
     </div>
-  </div> -->
+  </div>
 
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-f584ec07-af49-4793-829b-69e6a54c284d"></div>
 </body>
 
 </html>
