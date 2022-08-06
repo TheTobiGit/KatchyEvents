@@ -114,10 +114,10 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: #ffff;
   border-radius: 10px;
-  height: 70vh;
+  height: 74vh;
   margin: 4vh 13vw;
 }
 
@@ -163,6 +163,52 @@ form .name, .contact, .date {
   padding-left: 5px;
 }
 
+.service-opt, .message {
+  align-self: flex-start;
+}
+
+.service-opt select {
+  height: 6vh;
+  width: 32vw;
+}
+
+.message textarea {
+  width: 32vw;
+  height: 20vh;
+  padding: 10px;
+}
+
+form button {
+  height: 7vh;
+  width: 10vw;
+  cursor: pointer;
+  background-color: var(--dark-color);
+  color: white;
+}
+
+
+
+
+
+.submit-btn:hover {
+  background-color: #959595;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.socials div a {
+  display: flex;
+  align-items: center;
+}
+
+.socials i {
+  margin-right: 5px;
+  font-size: 1.8em;
+}
 
 /* Responsive */
 @media only screen and (max-width: 768px) {

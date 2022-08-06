@@ -40,7 +40,7 @@
 
   <main class="main">
     <div class="form-container">
-      <form action="">
+      <form action="https://formspree.io/f/xnqrayog" method="POST">
         <label for="form-header" class="form-header">Book A Service</label>
         <div class="name">
           <div class="fname">
@@ -51,9 +51,9 @@
             <!-- <label for="lname" id="lname">Last Name *</label> -->
             <input type="text" name="lname" id="lname" placeholder="Last Name *" required>
           </div>
-        
-        
-        
+
+
+
         </div>
         <div class="contact">
           <div class="email">
@@ -65,13 +65,31 @@
         </div>
         <div class="date">
           <div class="check-in">
-            <input type="date" id="date" placeholder="Check-in date">
+            <input placeholder="Check-in date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+              id="date">
           </div>
           <div class="check-out">
-            <!-- <input type="date" id="date" placeholder="Check-out date"> -->
-            <input type="text" placeholder="Date of birth" onfocus="(this.type='date')">
+            <input placeholder="Check-out date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+              id="date">
           </div>
         </div>
+        <div class="service-opt">
+          <select name="" id="">
+            <option value="" disabled selected hidden>Choose a service</option>
+            <option value="">Wedding</option>
+            <option value="">Naming Ceremony</option>
+            <option value="">Corporate Event</option>
+            <option value="">Baby / Bridal Shower</option>
+            <option value="">Birthday Party</option>
+            <option value="">Engagement</option>
+            <option value="">Bachelorette Party</option>
+            <option value="">Ushering Service</option>
+          </select>
+        </div>
+        <div class="message">
+          <textarea name="message" id="message" cols="10" rows="10" placeholder="Message"></textarea>
+        </div>
+        <button type="submit"class="submit-btn">Book Now</button>
       </form>
     </div>
   </main>
