@@ -298,6 +298,7 @@ form button {
   }
 }
 
+
 @media only screen and (max-width: 596px) {
   .form-container {
     margin: 4vh 6vw;
@@ -334,6 +335,7 @@ form button {
   }
 }
 
+
 @media only screen and (min-width: 769px) and (max-width: 1019px) {
   .form-container {
     margin: 4vh 6vw;
@@ -366,6 +368,7 @@ form button {
   }
 }
 
+
 @media only screen and (min-width: 1020px) and (max-width: 1368px) {
   .name input {
     width: 18vw;
@@ -386,4 +389,43 @@ form button {
   .service-opt select {
     width: 38vw;
   }
+}
+
+@media only screen and (max-width: 531px) {
+
+  .form-container {
+    height: 100vh;
+    margin: 4vh 10vw;
+  }
+
+  form .name,
+  .contact,
+  .date {
+    flex-direction: column;
+  }
+
+  .name input {
+    width: 70vw;
+  }
+
+  .date input {
+    width: 70vw;
+  }
+
+  .contact input {
+    width: 70vw;
+  }
+
+  .message textarea {
+    width: 70vw;
+  }
+
+  .service-opt select {
+    width: 70vw;
+  }
+
+  form button {
+    width: 30vw;
+  }
+
 }
