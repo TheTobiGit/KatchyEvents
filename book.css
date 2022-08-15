@@ -166,6 +166,10 @@ form .name,
   padding-left: 5px;
 }
 
+.date input::placeholder {
+  color: #22C55E;
+}
+
 .service-opt,
 .message {
   align-self: flex-start;
