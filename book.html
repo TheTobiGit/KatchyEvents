@@ -11,6 +11,9 @@
   <!-- ===== Font Awesome CDN ===== -->
   <script src="https://kit.fontawesome.com/b9a7a83cdd.js" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  
+
   <!-- ===== CSS ===== -->
   <link rel="stylesheet" href="book.css">
 </head>
@@ -60,12 +63,14 @@
         </div>
         <div class="date">
           <div class="check-in">
-            <input placeholder="Check-in date" type="text" name="Check-in" onfocus="(this.type='date')"
-              onblur="(this.type='text')" id="date" required>
+            <!-- <input placeholder="Check-in date" type="text" name="Check-in" onfocus="(this.type='date')"
+              onblur="(this.type='text')" id="date" required> -->
+              <input type="date" name="Check-in" id="date" placeholder="Check-in date" required>
           </div>
           <div class="check-out">
-            <input placeholder="Check-out date" type="text" name="Check-out" onfocus="(this.type='date')"
-              onblur="(this.type='text')" id="date">
+            <!-- <input placeholder="Check-out date" type="text" name="Check-out" onfocus="(this.type='date')"
+              onblur="(this.type='text')" id="date"> -->
+              <input type="date" name="Check-out" id="date" placeholder="Check-out date">
           </div>
         </div>
         <div class="service-opt">
@@ -110,6 +115,11 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <script>
+    flatpickr("input[type=date]", {});
+  </script>
 </body>
 
 </html>
